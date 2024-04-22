@@ -12,6 +12,7 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/container.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -31,14 +32,33 @@
         <div>
             <span class="nav-title">wiki-maps</span>
         </div>
+        <div class="user-toggle">
+            <i class="fa-solid fa-user"></i>
+        </div>
     </nav>
     <main>
         <section>
-            <div class="menu-items">
+            <div>
                 <!-- Menu items will be prepended here -->
-                <span>Whistler Coffee Shops</span></br>
-                <span>Whistler Hotels</span><br>
-                <span>Vancouver Parks</span>
+                <ul class="menu-items">
+                    <li>Whistler Coffee Shops <span class="heart"><i class="fa-solid fa-heart"></i></span></li>
+                    <li>Whistler Hotels <span class="heart"><i class="fa-solid fa-heart"></i></span></li>
+                    <li>Vancouver Parks <span class="heart"><i class="fa-solid fa-heart"></i></span></li>
+                </ul>
+            </div>
+            <div class="container">
+                <!-- Different Pages load here on click -->
+                <span class="map-options-toggle"><i class="fa-solid fa-ellipsis"></i></span>
+            </div>
+            <div class="user-options">
+                <p class="add-map">Add Map</p> <br>
+                <p class="profile">Profile</p> <br>
+                <p class="logout">Log Out</p>
+            </div>
+            <div class="map-options">
+                <p class="add-point">Add Point</p> <br>
+                <p class="edit-point">Edit Point</p> <br>
+                <p class="delete-point">Delete Point</p>
             </div>
         </section>
     </main>
